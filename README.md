@@ -33,7 +33,7 @@ The [variance][variance] for a [chi-squared][chisquare-distribution] random vari
 <!-- <equation class="equation" label="eq:variance" align="center" raw="\operatorname{Var}\left( X \right) = 2k" alt="Variance for a chi-squared distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = 2k
+\mathop{\mathrm{Var}}\left( X \right) = 2k
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2k" data-equation="eq:variance">
@@ -51,38 +51,30 @@ where `k >= 0` is the degrees of freedom.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-chisquare-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-variance = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var variance = require( 'path/to/vendor/umd/stats-base-dists-chisquare-variance/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.variance;
-})();
-</script>
+var variance = require( '@stdlib/stats-base-dists-chisquare-variance' );
 ```
 
 #### variance( k )
@@ -124,15 +116,10 @@ var v = variance( -1.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var variance = require( '@stdlib/stats-base-dists-chisquare-variance' );
 
 var k;
 var v;
@@ -143,11 +130,6 @@ for ( i = 0; i < 10; i++ ) {
     v = variance( k );
     console.log( 'k: %d, Var(X,k): %d', k.toFixed( 4 ), v.toFixed( 4 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
