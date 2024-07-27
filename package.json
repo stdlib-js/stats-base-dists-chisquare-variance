@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-chisquare-variance",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Chi-squared distribution variance.",
   "license": "Apache-2.0",
   "author": {
