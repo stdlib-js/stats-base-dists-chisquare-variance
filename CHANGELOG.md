@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-01-19)
+
+<section class="features">
+
+### Features
+
+-   [`ccaed30`](https://github.com/stdlib-js/stdlib/commit/ccaed309a4bfdc50b0c8f2c78f1ee4e365d51337) - add C implementation for `stats/base/dists/chisquare/variance` [(#3999)](https://github.com/stdlib-js/stdlib/pull/3999)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3512](https://github.com/stdlib-js/stdlib/issues/3512)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`ccaed30`](https://github.com/stdlib-js/stdlib/commit/ccaed309a4bfdc50b0c8f2c78f1ee4e365d51337) - **feat:** add C implementation for `stats/base/dists/chisquare/variance` [(#3999)](https://github.com/stdlib-js/stdlib/pull/3999) _(by Vivek Maurya, Philipp Burckhardt, stdlib-bot)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Philipp Burckhardt
+-   Vivek Maurya
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
