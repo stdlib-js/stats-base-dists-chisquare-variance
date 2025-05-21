@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-18)
+## Unreleased (2025-05-21)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`2e9da74`](https://github.com/stdlib-js/stdlib/commit/2e9da74a9f19a2090b8405b54553baa7fb715c27) - **docs:** replace manual `for` loop in examples [(#7056)](https://github.com/stdlib-js/stdlib/pull/7056) _(by Harsh)_
 -   [`4a896f3`](https://github.com/stdlib-js/stdlib/commit/4a896f34e9a1bd41102d45f4de71992ce85fab5f) - **bench:** update random value generation [(#7027)](https://github.com/stdlib-js/stdlib/pull/7027) _(by Harsh)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`e61b1de`](https://github.com/stdlib-js/stdlib/commit/e61b1dee3334bacf30d213de5b5f1c7868c0753b) - **docs:** clean-up of C docstrings _(by Philipp Burckhardt)_
