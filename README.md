@@ -62,14 +62,32 @@ where `k >= 0` is the degrees of freedom.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-chisquare-variance
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@deno/mod.js';
+var variance = require( '@stdlib/stats-base-dists-chisquare-variance' );
 ```
 
 #### variance( k )
@@ -112,9 +130,9 @@ var v = variance( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@deno/mod.js';
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var variance = require( '@stdlib/stats-base-dists-chisquare-variance' );
 
 var opts = {
     'dtype': 'float64'
@@ -130,7 +148,95 @@ logEachMap( 'k: %0.4f, Var(X;k): %0.4f', k, variance );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/chisquare/variance.h"
+```
+
+#### stdlib_base_dists_chisquare_variance( k )
+
+Returns the [variance][variance] of a [chi-squared][chisquare-distribution] distribution with degrees of freedom `k`.
+
+```c
+double out = stdlib_base_dists_chisquare_variance( 9.0 );
+// returns 18.0
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] double` degrees of freedom.
+
+```c
+double stdlib_base_dists_chisquare_variance( const double k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/chisquare/variance.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        k = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_chisquare_variance( k );
+        printf( "k: %lf, Var(X;k): %lf\n", k, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -157,7 +263,7 @@ logEachMap( 'k: %0.4f, Var(X;k): %0.4f', k, variance );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
