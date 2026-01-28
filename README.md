@@ -69,7 +69,7 @@ where `k >= 0` is the degrees of freedom.
 ## Usage
 
 ```javascript
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@esm/index.mjs';
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@v0.3.0-esm/index.mjs';
 ```
 
 #### variance( k )
@@ -119,7 +119,7 @@ var v = variance( -1.0 );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@esm/index.mjs';
+import variance from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-chisquare-variance@v0.3.0-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
