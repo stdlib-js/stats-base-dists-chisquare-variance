@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-chisquare-variance",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Chi-squared distribution variance.",
   "license": "Apache-2.0",
   "author": {
@@ -41,8 +41,8 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nan": "^0.2.2",
-    "@stdlib/math-base-napi-unary": "^0.2.3",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/math-base-napi-unary": "^0.2.4",
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
